@@ -4,7 +4,7 @@ window.onload = event => {
     const modalDiv = document.createElement('div');
     const search = document.getElementsByClassName("search-input");
     const errorDiv = document.createElement('div');
-    const users = 30;
+    const users = 12;
     function fetchData(url){ //fetch function with handed url from call function
         return fetch(url) //return value 
             .then(checkStatus) //check for 200 ok 
