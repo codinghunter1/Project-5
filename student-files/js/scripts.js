@@ -24,7 +24,7 @@ window.onload = event => {
         while (gallery.firstChild) gallery.removeChild(gallery.firstChild); //while there is childern nodes of gallery remove all
         data.results.forEach(function(info, i){ //loop through data groups of people 
             if(!!search && (info.name.first+info.name.last).toLowerCase().includes(search.toLowerCase()) || !search){ //if there is a seach check to see if ith name is included in search, or no search input
-                let htmlLimitedData = ` //html structure
+                let htmlLimitedData = ` 
                     <div class="card" id = "${i}-card">
                         <div class="card-img-container">
                             <img class="card-img" src="${info.picture.large}" alt="profile picture">
